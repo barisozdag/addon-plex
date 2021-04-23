@@ -6,6 +6,6 @@
     "i386": "ghcr.io/hassio-addons/ubuntu-base/i386:6.2.0"
   },
   "args": {
-    "RELEASE": "1.22.1.4275-48e10484b"
+    "RELEASE": "1.22.3.4392-d7c624def"
   }
 }
