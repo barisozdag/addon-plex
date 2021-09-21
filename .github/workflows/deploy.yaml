@@ -75,11 +75,9 @@ jobs:
         uses: actions/cache@v2.1.6
         with:
           path: /tmp/.docker-cache
-          key:
-            docker-${{ github.ref }}-${{ matrix.architecture }}-${{ github.sha
-            }}
+          key: docker-${{ matrix.architecture }}-${{ github.sha }}
           restore-keys: |
-            docker-${{ github.ref }}-${{ matrix.architecture }}
+            docker-${{ matrix.architecture }}
       - name: 🏗 Set up QEMU
         uses: docker/setup-qemu-action@v1.2.0
       - name: 🏗 Set up Docker Buildx
@@ -125,7 +123,7 @@ jobs:
           cache-from: |
             type=local,src=/tmp/.docker-cache
             ghcr.io/barisozdag/${{ needs.information.outputs.slug }}/${{ matrix.architecture }}:edge
-          cache-to: type=local,mode=max,dest=/tmp/.docker-cache
+          cache-to: type=local,mode=max,dest=/tmp/.docker-cache-new
           platforms: ${{ steps.flags.outputs.platform }}
           build-args: |
             BUILD_ARCH=${{ matrix.architecture }}
@@ -136,6 +134,10 @@ jobs:
             BUILD_REF=${{ github.sha }}
             BUILD_REPOSITORY=${{ github.repository }}
             BUILD_VERSION=${{ needs.information.outputs.version }}
+      - name: 🚚 Swap build cache
+        run: |
+          rm -rf /tmp/.docker-cache
+          mv /tmp/.docker-cache-new /tmp/.docker-cache
 
   publish-edge:
     name: 📢 Publish to edge repository
