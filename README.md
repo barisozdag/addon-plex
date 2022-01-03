@@ -50,7 +50,7 @@ check [the contributor's page][contributors].
 
 MIT License
 
-Copyright (c) 2018-2021 Franck Nijhof, 2021 Barış Özdağ
+Copyright (c) 2018-2021 Franck Nijhof, 2021-2022 Barış Özdağ
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -84,7 +84,7 @@ SOFTWARE.
 [github-actions]: https://github.com/barisozdag/addon-plex/actions
 [issue]: https://github.com/barisozdag/addon-plex/issues
 [license-shield]: https://img.shields.io/github/license/barisozdag/addon-plex.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [releases-shield]: https://img.shields.io/github/release/barisozdag/addon-plex.svg
 [releases]: https://github.com/barisozdag/addon-plex/releases
