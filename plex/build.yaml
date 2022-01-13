@@ -5,4 +5,4 @@ build_from:
   armv7: ghcr.io/hassio-addons/ubuntu-base/armv7:6.2.1
   i386: ghcr.io/hassio-addons/ubuntu-base/i386:6.2.1
 args:
-  release: 1.25.2.5319-c43dc0277
+  release: 1.25.3.5385-f05b712b6
