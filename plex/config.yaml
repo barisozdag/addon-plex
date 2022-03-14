@@ -4,6 +4,7 @@ version: dev
 slug: plex-apsw
 description: Recorded media, live TV, online news, and podcasts ready to stream.
 url: https://github.com/barisozdag/addon-plex
+codenotary: baris@ozdag.net
 webui: http://[HOST]:[PORT:32400]/web
 startup: services
 arch:
