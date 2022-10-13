@@ -5,6 +5,6 @@ build_from:
   armv7: ghcr.io/hassio-addons/ubuntu-base/armv7:6.2.1
   i386: ghcr.io/hassio-addons/ubuntu-base/i386:6.2.1
 args:
-  release: 1.28.2.6151-914ddd2b3
+  release: 1.29.0.6244-819d3678c
 codenotary:
   signer: baris@ozdag.net
