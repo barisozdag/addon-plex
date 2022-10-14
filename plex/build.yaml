@@ -4,7 +4,7 @@ build_from:
   amd64: ghcr.io/hassio-addons/ubuntu-base/amd64:8.1.1
   armv7: ghcr.io/hassio-addons/ubuntu-base/armv7:8.1.1
 args:
-  release: 1.29.0.6244-819d3678c
+  release: 1.29.1.6276-4a96dd5b1
 codenotary:
   base_image: codenotary@frenck.dev
   signer: baris@ozdag.net
