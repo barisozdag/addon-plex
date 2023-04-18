@@ -14,7 +14,7 @@ on:
 
 jobs:
   workflows:
-    uses: hassio-addons/workflows/.github/workflows/addon-deploy.yaml@main
+    uses: barisozdag/workflows/.github/workflows/addon-deploy.yaml@main
     with:
       repository: haddons-repo
       repository_edge: haddons-repo-edge
