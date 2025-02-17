@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/aarch64:7.6.2
+ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/aarch64:7.7.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -15,7 +15,7 @@ RUN \
     \
     && apt-get install -y --no-install-recommends \
         xmlstarlet=1.6.1-3 \
-        uuid-runtime=2.38.1-5+deb12u2 \
+        uuid-runtime=2.38.1-5+deb12u3 \
         unrar=1:6.2.6-1+deb12u1 \
     \
     && if [ "${BUILD_ARCH}" = "aarch64" ]; then ARCH="arm64"; fi \
