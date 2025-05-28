@@ -4,4 +4,4 @@ build_from:
   amd64: ghcr.io/hassio-addons/debian-base:7.8.3
   armv7: ghcr.io/hassio-addons/debian-base:7.8.3
 args:
-  release: 1.41.7.9799-5bce000f7
+  release: 1.41.7.9823-59f304c16
